@@ -44,6 +44,10 @@
             this.btn_Add = new System.Windows.Forms.Button();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.dtp = new System.Windows.Forms.DateTimePicker();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_number
@@ -77,7 +81,7 @@
             // lbl_itemName
             // 
             this.lbl_itemName.AutoSize = true;
-            this.lbl_itemName.Location = new System.Drawing.Point(85, 154);
+            this.lbl_itemName.Location = new System.Drawing.Point(64, 128);
             this.lbl_itemName.Name = "lbl_itemName";
             this.lbl_itemName.Size = new System.Drawing.Size(58, 13);
             this.lbl_itemName.TabIndex = 3;
@@ -105,21 +109,21 @@
             // 
             // txt_itemName
             // 
-            this.txt_itemName.Location = new System.Drawing.Point(88, 199);
+            this.txt_itemName.Location = new System.Drawing.Point(157, 128);
             this.txt_itemName.Name = "txt_itemName";
             this.txt_itemName.Size = new System.Drawing.Size(507, 20);
             this.txt_itemName.TabIndex = 7;
             // 
             // txt_qty
             // 
-            this.txt_qty.Location = new System.Drawing.Point(124, 282);
+            this.txt_qty.Location = new System.Drawing.Point(157, 157);
             this.txt_qty.Name = "txt_qty";
             this.txt_qty.Size = new System.Drawing.Size(100, 20);
             this.txt_qty.TabIndex = 8;
             // 
             // txt_price
             // 
-            this.txt_price.Location = new System.Drawing.Point(267, 282);
+            this.txt_price.Location = new System.Drawing.Point(334, 158);
             this.txt_price.Name = "txt_price";
             this.txt_price.Size = new System.Drawing.Size(100, 20);
             this.txt_price.TabIndex = 9;
@@ -127,7 +131,7 @@
             // lbl_qty
             // 
             this.lbl_qty.AutoSize = true;
-            this.lbl_qty.Location = new System.Drawing.Point(153, 248);
+            this.lbl_qty.Location = new System.Drawing.Point(76, 160);
             this.lbl_qty.Name = "lbl_qty";
             this.lbl_qty.Size = new System.Drawing.Size(46, 13);
             this.lbl_qty.TabIndex = 10;
@@ -136,7 +140,7 @@
             // lbl_price
             // 
             this.lbl_price.AutoSize = true;
-            this.lbl_price.Location = new System.Drawing.Point(302, 257);
+            this.lbl_price.Location = new System.Drawing.Point(275, 161);
             this.lbl_price.Name = "lbl_price";
             this.lbl_price.Size = new System.Drawing.Size(31, 13);
             this.lbl_price.TabIndex = 11;
@@ -144,7 +148,7 @@
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(124, 372);
+            this.btn_Add.Location = new System.Drawing.Point(480, 164);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(75, 23);
             this.btn_Add.TabIndex = 12;
@@ -154,7 +158,7 @@
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Location = new System.Drawing.Point(267, 372);
+            this.btn_cancel.Location = new System.Drawing.Point(623, 164);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(75, 23);
             this.btn_cancel.TabIndex = 13;
@@ -169,11 +173,27 @@
             this.dtp.Size = new System.Drawing.Size(200, 20);
             this.dtp.TabIndex = 14;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(-3, 225);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(802, 236);
+            this.dataGridView1.TabIndex = 15;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form2
             // 
+            this.AcceptButton = this.btn_Add;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btn_cancel;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dtp);
             this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_Add);
@@ -189,7 +209,9 @@
             this.Controls.Add(this.lbl_date);
             this.Controls.Add(this.lbl_number);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "FILL IT";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,5 +234,7 @@
         private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.Button btn_cancel;
         private System.Windows.Forms.DateTimePicker dtp;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

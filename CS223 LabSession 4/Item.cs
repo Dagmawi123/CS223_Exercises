@@ -9,6 +9,7 @@ namespace CS223_LabSession_4
 {
     class Item
     {
+       static List<Item> Products = new List<Item>();
         public int Number { get; set; }
         public String Date { get; set; }
         public int Sku { get; set; }
@@ -16,9 +17,17 @@ namespace CS223_LabSession_4
         public int Quantity { get; set; }
         public double Price { get; set; }
         public void save() {
-            MessageBox.Show("Data Added Successfully");
 
+            MessageBox.Show("Data Added Successfully");
+            Products.Add(this);
+            
+        }
+        public static List<Item> getAllProducts() {
+            return Products;
         }
 
+
     }
+
+
 }
