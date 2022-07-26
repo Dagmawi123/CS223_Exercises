@@ -20,3 +20,4 @@ C:\Users\user\source\repos\CS223_Exercises\CS223 LabSession 4\obj\Debug\CS223 La
 C:\Users\user\source\repos\CS223_Exercises\CS223 LabSession 4\obj\Debug\CS223 LabSession 4.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\CS223_Exercises\CS223 LabSession 4\obj\Debug\CS223 LabSession 4.exe
 C:\Users\user\source\repos\CS223_Exercises\CS223 LabSession 4\obj\Debug\CS223 LabSession 4.pdb
+C:\Users\user\source\repos\CS223_Exercises\CS223 LabSession 4\obj\Debug\CS223_LabSession_4.Form3.resources

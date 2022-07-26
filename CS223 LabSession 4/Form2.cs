@@ -17,6 +17,12 @@ namespace CS223_LabSession_4
         {
             InitializeComponent();
         }
+        public Form2(String str)
+        {
+            InitializeComponent();
+            lbl_profile.Text = str;
+        }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -70,10 +76,21 @@ namespace CS223_LabSession_4
                     it.Price = double.Parse(txt_price.Text);
                     it.Quantity = int.Parse(txt_qty.Text);
                     it.Sku = int.Parse(txt_Sku.Text);
-                    it.save();
+                it.ISAVA = cb_avb.Checked;
+                if (radioButton1.Checked)
+                    it.type = radioButton1.Text;
+                else it.type = radioButton2.Text;
+          //      it.simple = false;
+                it.save();
                     dataGridView1.DataSource = null;
                     dataGridView1.DataSource = Item.getAllProducts();
-                }
+            
+
+               
+
+
+                
+            }
             
         }
 
@@ -83,6 +100,22 @@ namespace CS223_LabSession_4
             this.Close();
 
             //Console.WriteLine(Item.getAllProducts());
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            String message="";
+            foreach (var item in checkedListBox1.CheckedItems) {
+                if (checkedListBox1.CheckedItems.Count == 0) { MessageBox.Show("NO ITEMS FOUND!"); }
+                else message += item.ToString();
+
+            }
+            MessageBox.Show(message);
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
 
         }
     }
