@@ -9,8 +9,8 @@ using System.Windows.Forms;
 namespace CS223_LabSession_4
 {
     class Item
-    {ArrayList m = new ArrayList();
-       static List<Item> Products = new List<Item>();
+    { ArrayList m = new ArrayList();
+        static List<Item> Products = new List<Item>();
         public int Number { get; set; }
         public String Date { get; set; }
         public int Sku { get; set; }
@@ -19,7 +19,7 @@ namespace CS223_LabSession_4
         public double Price { get; set; }
         public bool ISAVA { get; set; }
         public String type { get; set; }
-     //   public bool simple { get; set; }
+        //   public bool simple { get; set; }
 
         public void save() {
             /*m.Add(8);
@@ -29,17 +29,20 @@ namespace CS223_LabSession_4
              Products.Add(this);
              */
             Products.Add(this);
-            MessageBox.Show("Data Added Successfully "+this.type);
-            
+            MessageBox.Show("Data Added Successfully " );
 
-            
+
+
         }
         public static List<Item> getAllProducts() {
             return Products;
         }
-
+        public static Item Search(String name) {
+            //Item p;
+           // object c = 4;
+            //object o=false;
+            return Products.Find( p=> p.ItemName == name);
+        }
 
     }
-
-
 }

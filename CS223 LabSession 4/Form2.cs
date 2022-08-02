@@ -98,6 +98,11 @@ namespace CS223_LabSession_4
         {
             //MessageBox.Show($"Hello {txt_itemName.Text}");
             this.Close();
+            Form opened;
+            opened = Form3.ActiveForm;
+if(opened!=null)
+            opened.Close();
+
 
             //Console.WriteLine(Item.getAllProducts());
 
@@ -117,6 +122,31 @@ namespace CS223_LabSession_4
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_srch_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(tb_srch.Text) || tb_srch.Text.Equals("Enter Item Name")) {
+                MessageBox.Show("Enter What to search(Item Name)");
+                return;
+            }
+            else
+            { Item i = Item.Search(tb_srch.Text);
+                if (i != null)
+                {
+                    MessageBox.Show($"Found{tb_srch.Text}." +
+                        $"Automatically filled the form according to the Search!");
+                    txt_itemName.Text = i.ItemName;
+                    txt_Number.Text = i.Number.ToString();
+                    txt_price.Text = i.Price.ToString();
+                    txt_qty.Text = i.Quantity.ToString();
+                    txt_Sku.Text = i.Sku.ToString();
+                    dtp.Text = i.Date;
+
+                }
+                else
+                    MessageBox.Show("Sorry Item not found!");
+            }
         }
     }
 }
