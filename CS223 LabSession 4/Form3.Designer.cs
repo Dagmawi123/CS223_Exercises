@@ -34,6 +34,7 @@
             this.tb_pwd = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.SuspendLayout();
             // 
             // label1
@@ -63,10 +64,21 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // domainUpDown1
+            // 
+            this.domainUpDown1.Items.Add(resources.GetString("domainUpDown1.Items"));
+            this.domainUpDown1.Items.Add(resources.GetString("domainUpDown1.Items1"));
+            this.domainUpDown1.Items.Add(resources.GetString("domainUpDown1.Items2"));
+            resources.ApplyResources(this.domainUpDown1, "domainUpDown1");
+            this.domainUpDown1.Name = "domainUpDown1";
+            this.domainUpDown1.SelectedItemChanged += new System.EventHandler(this.domainUpDown1_SelectedItemChanged);
+            // 
             // Form3
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.Controls.Add(this.domainUpDown1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_pwd);
@@ -74,6 +86,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,5 +99,6 @@
         private System.Windows.Forms.TextBox tb_pwd;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DomainUpDown domainUpDown1;
     }
 }

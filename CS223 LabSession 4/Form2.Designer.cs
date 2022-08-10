@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.lbl_number = new System.Windows.Forms.Label();
             this.lbl_date = new System.Windows.Forms.Label();
             this.lbl_sku = new System.Windows.Forms.Label();
@@ -61,9 +62,14 @@
             this.lbl_search = new System.Windows.Forms.Label();
             this.tb_srch = new System.Windows.Forms.TextBox();
             this.btn_srch = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_number
@@ -332,30 +338,60 @@
             // 
             // lbl_search
             // 
-            this.lbl_search.AutoSize = true;
-            this.lbl_search.Location = new System.Drawing.Point(12, 9);
+            this.lbl_search.Image = global::CS223_LabSession_4.Properties.Resources.icon;
+            this.lbl_search.Location = new System.Drawing.Point(522, 0);
             this.lbl_search.Name = "lbl_search";
-            this.lbl_search.Size = new System.Drawing.Size(65, 13);
+            this.lbl_search.Size = new System.Drawing.Size(208, 23);
             this.lbl_search.TabIndex = 25;
             this.lbl_search.Text = "Search here";
             // 
             // tb_srch
             // 
-            this.tb_srch.Location = new System.Drawing.Point(12, 25);
+            this.tb_srch.Location = new System.Drawing.Point(35, 3);
             this.tb_srch.Name = "tb_srch";
-            this.tb_srch.Size = new System.Drawing.Size(100, 20);
+            this.tb_srch.Size = new System.Drawing.Size(155, 20);
             this.tb_srch.TabIndex = 26;
             this.tb_srch.Text = "Enter Item Name";
             // 
             // btn_srch
             // 
-            this.btn_srch.Location = new System.Drawing.Point(129, 22);
+            this.btn_srch.Location = new System.Drawing.Point(879, 29);
             this.btn_srch.Name = "btn_srch";
             this.btn_srch.Size = new System.Drawing.Size(75, 23);
             this.btn_srch.TabIndex = 27;
             this.btn_srch.Text = "Find";
             this.btn_srch.UseVisualStyleBackColor = true;
             this.btn_srch.Click += new System.EventHandler(this.btn_srch_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.pictureBox1);
+            this.groupBox2.Controls.Add(this.tb_srch);
+            this.groupBox2.Location = new System.Drawing.Point(759, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(195, 23);
+            this.groupBox2.TabIndex = 28;
+            this.groupBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(6, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(29, 20);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 13);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Display Products";
+            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // Form2
             // 
@@ -364,9 +400,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CancelButton = this.btn_cancel;
-            this.ClientSize = new System.Drawing.Size(951, 450);
+            this.ClientSize = new System.Drawing.Size(955, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_srch);
-            this.Controls.Add(this.tb_srch);
             this.Controls.Add(this.lbl_search);
             this.Controls.Add(this.lbl_profile);
             this.Controls.Add(this.label2);
@@ -398,6 +435,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,21 +445,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbl_number;
-        private System.Windows.Forms.Label lbl_date;
-        private System.Windows.Forms.Label lbl_sku;
-        private System.Windows.Forms.Label lbl_itemName;
-        private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.TextBox txt_Number;
-        private System.Windows.Forms.TextBox txt_Sku;
-        private System.Windows.Forms.TextBox txt_itemName;
-        private System.Windows.Forms.TextBox txt_qty;
-        private System.Windows.Forms.TextBox txt_price;
-        private System.Windows.Forms.Label lbl_qty;
-        private System.Windows.Forms.Label lbl_price;
+       public System.Windows.Forms.Label lbl_number;
+        public System.Windows.Forms.Label lbl_date;
+        public System.Windows.Forms.Label lbl_sku;
+        public System.Windows.Forms.Label lbl_itemName;
+        public System.Windows.Forms.ImageList imageList1;
+        public System.Windows.Forms.TextBox txt_Number;
+        public System.Windows.Forms.TextBox txt_Sku;
+        public System.Windows.Forms.TextBox txt_itemName;
+        public System.Windows.Forms.TextBox txt_qty;
+        public System.Windows.Forms.TextBox txt_price;
+        public System.Windows.Forms.Label lbl_qty;
+        public System.Windows.Forms.Label lbl_price;
         private System.Windows.Forms.Button btn_Add;
         private System.Windows.Forms.Button btn_cancel;
-        private System.Windows.Forms.DateTimePicker dtp;
+        public System.Windows.Forms.DateTimePicker dtp;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.CheckBox cb_avb;
@@ -437,5 +477,8 @@
         private System.Windows.Forms.Button btn_srch;
         private System.Windows.Forms.TextBox tb_srch;
         private System.Windows.Forms.Label lbl_search;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label3;
     }
 }

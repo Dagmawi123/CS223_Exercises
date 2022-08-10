@@ -45,5 +45,15 @@ namespace CS223_LabSession_4
         {
 
         }
+
+        private void addNewProductToolStripMenuItem_MouseHover(object sender, EventArgs e)
+        {
+           addNewProductToolStripMenuItem.BackColor=System.Drawing.Color.Green;
+        }
+
+        private void addNewProductToolStripMenuItem_MouseLeave(object sender, EventArgs e)
+        {
+            addNewProductToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+        }
     }
 }

@@ -63,10 +63,13 @@
             // 
             // addNewProductToolStripMenuItem
             // 
+            this.addNewProductToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.addNewProductToolStripMenuItem.Name = "addNewProductToolStripMenuItem";
             this.addNewProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addNewProductToolStripMenuItem.Text = "Add New Product";
             this.addNewProductToolStripMenuItem.Click += new System.EventHandler(this.addNewProductToolStripMenuItem_Click);
+            this.addNewProductToolStripMenuItem.MouseLeave += new System.EventHandler(this.addNewProductToolStripMenuItem_MouseLeave);
+            this.addNewProductToolStripMenuItem.MouseHover += new System.EventHandler(this.addNewProductToolStripMenuItem_MouseHover);
             // 
             // displayAllProductToolStripMenuItem
             // 

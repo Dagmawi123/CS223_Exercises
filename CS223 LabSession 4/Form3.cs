@@ -22,14 +22,23 @@ namespace CS223_LabSession_4
             if (!String.IsNullOrEmpty(tb_usr.Text) && tb_pwd.Text == "ADMIN")
             {
                 this.Hide();
-                Form2 f = new Form2(tb_usr.Text);
-                f.Show();
-                Form opened;
+               
+              /*  Form opened;
                  opened = Form3.ActiveForm;
                 if (opened != null)
                     opened.Close();
+                    
+                */Form2 f = new Form2(tb_usr.Text);
+                f.Show();
+                
             }
+
             else { MessageBox.Show("Incorrect Credential"); }
+        }
+
+        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show("Item changed!"); 
         }
     }
 }

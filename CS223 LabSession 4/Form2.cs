@@ -99,9 +99,9 @@ namespace CS223_LabSession_4
             //MessageBox.Show($"Hello {txt_itemName.Text}");
             this.Close();
             Form opened;
-            opened = Form3.ActiveForm;
-if(opened!=null)
-            opened.Close();
+          //  opened = Form.ActiveForm;
+//if(opened!=null)
+  //          opened.Close();
 
 
             //Console.WriteLine(Item.getAllProducts());
@@ -134,8 +134,8 @@ if(opened!=null)
             { Item i = Item.Search(tb_srch.Text);
                 if (i != null)
                 {
-                    MessageBox.Show($"Found{tb_srch.Text}." +
-                        $"Automatically filled the form according to the Search!");
+                    MessageBox.Show($"Found {tb_srch.Text}." +
+                        $" Automatically filled the form according to the Search!");
                     txt_itemName.Text = i.ItemName;
                     txt_Number.Text = i.Number.ToString();
                     txt_price.Text = i.Price.ToString();
@@ -148,5 +148,16 @@ if(opened!=null)
                     MessageBox.Show("Sorry Item not found!");
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+            Display d = new Display();
+            d.Show();
+                               }
     }
 }
