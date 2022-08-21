@@ -25,8 +25,24 @@ namespace CS223_LabSession_4
                 CARD2 c = new CARD2();
                 c.ItemName = i.ItemName;
                 c.Price = i.Price;
+                c.Click += ( sender2,e2) =>
+                {
+                   // MessageBox.Show(i.ItemName);
+                    ItemFill i2 = new ItemFill(i.ItemName,i.Price,i.Quantity);
+                    DetailPage dp = new DetailPage();
+                    dp.Controls.Add(i2);
+                    dp.Show();
+
+                    
+                };
                 flowLayoutPanel1.Controls.Add(c);
+
             }
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

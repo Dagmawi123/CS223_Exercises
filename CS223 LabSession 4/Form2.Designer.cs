@@ -338,10 +338,11 @@
             // 
             // lbl_search
             // 
+            this.lbl_search.Font = new System.Drawing.Font("Engravers MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_search.Image = global::CS223_LabSession_4.Properties.Resources.icon;
-            this.lbl_search.Location = new System.Drawing.Point(522, 0);
+            this.lbl_search.Location = new System.Drawing.Point(707, 29);
             this.lbl_search.Name = "lbl_search";
-            this.lbl_search.Size = new System.Drawing.Size(208, 23);
+            this.lbl_search.Size = new System.Drawing.Size(172, 20);
             this.lbl_search.TabIndex = 25;
             this.lbl_search.Text = "Search here";
             // 
@@ -431,6 +432,7 @@
             this.Controls.Add(this.lbl_number);
             this.Name = "Form2";
             this.Text = "FILL IT";
+            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.groupBox1.ResumeLayout(false);

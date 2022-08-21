@@ -156,8 +156,25 @@ namespace CS223_LabSession_4
 
         private void label3_Click_1(object sender, EventArgs e)
         {
-            Display d = new Display();
+               Display d = new Display();
             d.Show();
-                               }
+            //ItemFill p = new ItemFill();
+            //p.Show();
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

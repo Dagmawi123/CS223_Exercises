@@ -65,7 +65,7 @@
             // 
             this.addNewProductToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.addNewProductToolStripMenuItem.Name = "addNewProductToolStripMenuItem";
-            this.addNewProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewProductToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.addNewProductToolStripMenuItem.Text = "Add New Product";
             this.addNewProductToolStripMenuItem.Click += new System.EventHandler(this.addNewProductToolStripMenuItem_Click);
             this.addNewProductToolStripMenuItem.MouseLeave += new System.EventHandler(this.addNewProductToolStripMenuItem_MouseLeave);
@@ -74,14 +74,14 @@
             // displayAllProductToolStripMenuItem
             // 
             this.displayAllProductToolStripMenuItem.Name = "displayAllProductToolStripMenuItem";
-            this.displayAllProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.displayAllProductToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.displayAllProductToolStripMenuItem.Text = "Display All product";
             this.displayAllProductToolStripMenuItem.Click += new System.EventHandler(this.displayAllProductToolStripMenuItem_Click);
             // 
             // searchProductToolStripMenuItem
             // 
             this.searchProductToolStripMenuItem.Name = "searchProductToolStripMenuItem";
-            this.searchProductToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.searchProductToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.searchProductToolStripMenuItem.Text = "SearchProduct";
             this.searchProductToolStripMenuItem.Click += new System.EventHandler(this.searchProductToolStripMenuItem_Click);
             // 
@@ -98,19 +98,19 @@
             // addCategoryToolStripMenuItem
             // 
             this.addCategoryToolStripMenuItem.Name = "addCategoryToolStripMenuItem";
-            this.addCategoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addCategoryToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.addCategoryToolStripMenuItem.Text = "Add Category";
             // 
             // editCategoryToolStripMenuItem
             // 
             this.editCategoryToolStripMenuItem.Name = "editCategoryToolStripMenuItem";
-            this.editCategoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editCategoryToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.editCategoryToolStripMenuItem.Text = "Edit Category";
             // 
             // deleteCatagoryToolStripMenuItem
             // 
             this.deleteCatagoryToolStripMenuItem.Name = "deleteCatagoryToolStripMenuItem";
-            this.deleteCatagoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteCatagoryToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.deleteCatagoryToolStripMenuItem.Text = "Delete Catagory";
             // 
             // ContainerPage
