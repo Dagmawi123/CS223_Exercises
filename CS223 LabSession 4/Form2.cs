@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Data.SqlClient;
 
 namespace CS223_LabSession_4
 {
@@ -41,7 +42,8 @@ namespace CS223_LabSession_4
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
-        { String pat = @"([0-9]{2}.[0-9]{2})$";
+        {
+            String pat = @"([0-9]{2}.[0-9]{2})$";
             Regex  re= new Regex(pat);
 
             bool exist = false;
@@ -73,7 +75,7 @@ namespace CS223_LabSession_4
                     it.Number = int.Parse(txt_Number.Text);
                     it.Date = dtp.Text;
                     it.ItemName = txt_itemName.Text;
-                    it.Price = double.Parse(txt_price.Text);
+                    it.Price = float.Parse(txt_price.Text);
                     it.Quantity = int.Parse(txt_qty.Text);
                     it.Sku = int.Parse(txt_Sku.Text);
                 it.ISAVA = cb_avb.Checked;
@@ -156,10 +158,15 @@ namespace CS223_LabSession_4
 
         private void label3_Click_1(object sender, EventArgs e)
         {
-               Display d = new Display();
+            Display d = new Display();
             d.Show();
             //ItemFill p = new ItemFill();
             //p.Show();
+   
+
+
+
+
         }
 
         private void radioButton7_CheckedChanged(object sender, EventArgs e)
@@ -175,6 +182,12 @@ namespace CS223_LabSession_4
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = Item.getAllProducts();
         }
     }
 }

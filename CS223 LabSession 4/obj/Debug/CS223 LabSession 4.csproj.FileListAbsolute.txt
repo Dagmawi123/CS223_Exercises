@@ -29,3 +29,4 @@ C:\Users\user\source\repos\CS223_Exercises\CS223 LabSession 4\obj\Debug\CS223 La
 C:\Users\user\source\repos\CS223_Exercises\CS223 LabSession 4\obj\Debug\CS223_LabSession_4.Display.resources
 C:\Users\user\source\repos\CS223_Exercises\CS223 LabSession 4\obj\Debug\CS223_LabSession_4.ItemFill.resources
 C:\Users\user\source\repos\CS223_Exercises\CS223 LabSession 4\obj\Debug\CS223_LabSession_4.DetailPage.resources
+C:\Users\user\source\repos\CS223_Exercises\CS223 LabSession 4\obj\Debug\CS223_LabSession_4.SQLTEST.resources
